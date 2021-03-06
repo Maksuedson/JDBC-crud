@@ -86,7 +86,7 @@ public class FuncionarioDAO {
         return func;
     }
 
-    public Funcionario excluirPorId(int id) {
+    public void excluirPorId(int id) {
         conectar = FabricaConexaoPadrao.getConnection();
         String sql = "delete from employees where id = ?";
 
